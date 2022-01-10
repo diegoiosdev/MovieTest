@@ -1,0 +1,31 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+source 'https://cdn.cocoapods.org/'
+
+def third_party
+  pod 'Alamofire'
+  pod 'RxSwift', '~> 5'
+  pod 'RxCocoa', '~> 5'
+end
+
+target 'MovieTest' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for MovieTest
+  third_party
+
+  target 'MovieTestTests' do
+    # Pods for testing
+  end
+
+end
+
+target 'MovieTestDemo' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for MovieTestDemo
+  third_party
+
+end
