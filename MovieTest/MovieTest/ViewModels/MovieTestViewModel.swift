@@ -49,6 +49,6 @@ class MovieTestViewModel: MovieTestViewModelProtocol {
     }
     
     func getImage(with imagePath: String?, completion: @escaping (Data?) -> Void) {
-        useCase.getImage(with: imagePath, completion: completion)
+        //useCase.getImage(with: imagePath, completion: completion)
     }
 }
